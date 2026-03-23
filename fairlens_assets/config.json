@@ -1,0 +1,67 @@
+{
+  "best_threshold": 0.06,
+  "imbalance_ratio": 54.427841634738186,
+  "feature_cols": [
+    "gender",
+    "age",
+    "hypertension",
+    "heart_disease",
+    "ever_married",
+    "work_type",
+    "Residence_type",
+    "avg_glucose_level",
+    "bmi",
+    "smoking_status",
+    "age_group",
+    "age_glucose",
+    "age_bmi",
+    "hypert_heart",
+    "age_hypert",
+    "glucose_bmi"
+  ],
+  "fairness_threshold": 0.05,
+  "random_state": 42,
+  "protected_attrs": [
+    "gender",
+    "ever_married",
+    "Residence_type",
+    "age_group"
+  ],
+  "attr_label_maps": {
+    "gender": {
+      "0": "Female",
+      "1": "Male"
+    },
+    "ever_married": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "Residence_type": {
+      "0": "Rural",
+      "1": "Urban"
+    },
+    "age_group": {
+      "0": "<40",
+      "1": "40-60",
+      "2": "60+"
+    }
+  },
+  "attr_col_idx": {
+    "gender": 0,
+    "ever_married": 4,
+    "Residence_type": 6,
+    "age_group": 10
+  },
+  "base_metrics": {
+    "recall": 0.29936305732484075,
+    "precision": 0.0649171270718232,
+    "f1": 0.10669693530079455,
+    "f2": 0.17381656773577006,
+    "gmean": 0.5249556479374893,
+    "roc_auc": 0.7999001343253125,
+    "tp": 47,
+    "fp": 677,
+    "fn": 110,
+    "tn": 7844
+  }
+}
