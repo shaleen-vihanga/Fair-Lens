@@ -1,0 +1,60 @@
+{
+    "best_threshold": 0.06,
+    "rl_thresholds": {
+        "ever_married|0": 0.06999999999999999,
+        "ever_married|1": 0.08,
+        "Residence_type|0": 0.05,
+        "Residence_type|1": 0.06,
+        "age_group|0": 0.06,
+        "age_group|1": 0.06,
+        "age_group|2": 0.11
+    },
+    "feature_cols": [
+        "gender",
+        "age",
+        "hypertension",
+        "heart_disease",
+        "ever_married",
+        "work_type",
+        "Residence_type",
+        "avg_glucose_level",
+        "bmi",
+        "smoking_status",
+        "age_group",
+        "age_glucose",
+        "age_bmi",
+        "hypert_heart",
+        "age_hypert",
+        "glucose_bmi"
+    ],
+    "attr_label_maps": {
+        "gender": {
+            "0": "Female",
+            "1": "Male"
+        },
+        "ever_married": {
+            "0": "No",
+            "1": "Yes"
+        },
+        "Residence_type": {
+            "0": "Rural",
+            "1": "Urban"
+        },
+        "age_group": {
+            "0": "<40",
+            "1": "40-60",
+            "2": "60+"
+        }
+    },
+    "protected_attrs": [
+        "gender",
+        "ever_married",
+        "Residence_type",
+        "age_group"
+    ],
+    "biased_attrs": [
+        "ever_married",
+        "Residence_type",
+        "age_group"
+    ]
+}
